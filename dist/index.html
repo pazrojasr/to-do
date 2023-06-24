@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/b8cdc8451f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&family=Ysabeau+SC:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="/dist/main.js"></script>
+    <title>Todo List</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+          <h1 class="page-name">Todo List</h1>
+        </i>
+      </div>
+      <button class="button-open-nav" id="button-open-nav">
+        <i class="fas fa-bars"></i>
+      </button>
+    </header>
+    <main class="main">
+      <nav class="nav" id="nav">
+        <div class="default-projects-list">
+          <button-button-defaul-project id="button-inbox-projects">
+            <i class="fas fa inbox"></i>
+            inbox
+          </button-button-defaul-project>
+          <button class="button-default-project" id="button-today-projects">
+            <i class="fas fa-calendar-day"></i>
+            Hoy dia
+          </button>
+          <button class="button-default-project" id="button-week-projects">
+            <i class="fas fa-calendar-week"></i>
+            Esta semana
+          </button>
+        </div>
+        <h1 class="projects-title">Proyectos</h1>
+        <div class="projects-list" id="projects-list"></div>
+        <button class="button-add-project" id="button-add-project">
+          <i class="fas fa-plus"></i>
+          Agregar proyecto
+        </button>
+        <div class="add-project-popup" id="add-project-popup">
+          <input
+            class="input-add-project-popup"
+            id="input-add-project-popup"
+            type="text"
+          />
+          <div class="add-project-popup-buttons">
+            <button
+              class="button-add-project-popup"
+              id="button-add-project-popup"
+            >
+              Agregar
+            </button>
+            <button
+              class="button-cancel-project-popup"
+              id="button-cancel-project-popup"
+            >
+              Cancelar
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div class="project-preview" id="project-preview"></div>
+    </main>
+    <footer class="footer">
+      <p>Copyright © 2021 pazrojasr</p>
+      <a href="https://github.com/pazrojasr" target="_blank">
+        <i class="fab fa-github"></i
+      ></a>
+    </footer>
+  </body>
+</html>
